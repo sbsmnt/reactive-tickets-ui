@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#notify-alert {
+  animation: appear 10s ease infinite;
+}
+
+#app-notification {
+  animation: notification 10s ease infinite;
+}
+
+#dot-1{
+  animation: typing 3s ease infinite;
+  opacity: 0;
+}
+#dot-2{
+  animation: typing 3s ease .5s infinite;
+  opacity: 0;
+}
+#dot-3{
+  animation: typing 3s ease .7s infinite;
+  opacity: 0;
+}
+
+#beard {
+  animation: beard 1s ease 4s infinite;
+}
+
+#w-head{
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: nod 10s ease infinite;
+}
+
+@keyframes notification {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+  50%, 75% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  0%, 50%{
+    opacity: 0;
+  }
+  55%, 75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes beard {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0.1deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(0.05deg);
+  }
+  80%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes nod {
+  0%, 25%{
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-2.5deg);
+  }
+  55% {
+    transform: rotateZ(1deg);
+  }
+  60% {
+    transform: rotateZ(-2deg);
+  }
+  65% {
+    transform: rotateZ(1deg);
+  }
+  70% {
+    transform: rotateZ(0deg);
+  }
+  80%, 100%{
+    transform: rotate(0deg);
+  }
+
+}
+
