@@ -1,0 +1,35 @@
+
+.side-menu{
+  width: 20vh;
+  height: 100vh;
+  padding: 2rem 1rem 0 2rem;
+  box-shadow: 1px -10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.side-menu ul {
+  list-style: none;
+}
+
+.tr-dash-option{
+  padding: 7px 0;
+}
+
+.tr-dash-option a{
+  color: #212529;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tr-dash-option a:hover{
+  color: #18af75;
+  text-decoration: none;
+}
+
+.tr-dash-sublist {
+  padding: 10px 0;
+  margin-left: 1rem;
+}
+
+.rt-desk {
+  background: #f8f8f8;
+}
