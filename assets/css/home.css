@@ -1,4 +1,3 @@
-
 .gradient-light {
 	background: linear-gradient(
 		140deg,
@@ -58,6 +57,9 @@
 	text-decoration: none;
 }
 
+.app-menu{
+	margin-right: 1.5rem;
+}
 .app-menu i{
   font-size: 1.5rem;
   line-height: 1.5;

@@ -1,3 +1,22 @@
+.logged-user{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 7px;
+  background: lightcoral;
+  display: flex;
+  justify-content: center;
+}
+
+.logged-user p{
+  color: #f8f8f8;
+  font-size: .85rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+  
+}
 
 .side-menu{
   width: 20vh;
@@ -8,6 +27,7 @@
 
 .side-menu ul {
   list-style: none;
+  padding: 0;
 }
 
 .tr-dash-option{
@@ -33,3 +53,4 @@
 .rt-desk {
   background: #f8f8f8;
 }
+
