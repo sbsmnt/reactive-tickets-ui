@@ -20,144 +20,260 @@
 
 		<!-- Custom styles for this template -->
 		<link href="/assets/css/home.css" rel="stylesheet" />
-    <link href="/assets/css/animation.css" rel="stylesheet" />
-    <link href="/assets/css/user-dashboard.css" rel="stylesheet" />
+		<link href="/assets/css/animation.css" rel="stylesheet" />
+		<link href="/assets/css/user-dashboard.css" rel="stylesheet" />
 	</head>
 	<body>
-
 		<nav class="site-header gradient-light sticky-top py-1 px-4">
-			<div class="container-flex d-flex flex-row justify-content-between">
+			<div class="container-flex d-flex flex-row justify-content-between align-items-center">
 				<div>
-          <a class="py-2 d-md-inline-block app-menu" href="#">
-						<i class="fa fa-bars"></i>
-					<a class="py-2 d-md-inline-block app-title" href="/"
-						>Reactive Tickets</a>
-					</a>
-        </div>
-        <div>
 					<a class="py-2 d-md-inline-block app-menu" href="#">
+						<i class="fa fa-bars"></i>
+						<a class="py-2 d-md-inline-block app-title" href="/"
+							>Reactive Tickets</a
+						>
+					</a>
+				</div>
+				<div>
+					<a class="py-2 d-md-inline-block" href="#">
 						<div class="logged-user">
 							<p>TE</p>
 						</div>
 					</a>
-        </div>
+				</div>
 			</div>
 		</nav>
 
-		<div
-			class="d-flex flex-row justify-content-left"
-    >
-			<div class="side-menu">
-        <ul class="tr-dash-list">
-          <li class="tr-dash-option">
-            <a href="#" >My Tickets</a>
-            <ul class="tr-dash-sublist">
-              <li class="tr-dash-option">
-                <a href="#">Open</a>
-              </li>
-              <li class="tr-dash-option">
-                <a href="#">Close</a>
-              </li>
-            </ul>
-          </li>
-          
-        </ul>
-      </div>
-
-      <!-- Example -->
-		<div class="rt-desk flex-grow-1">
-
-      <div class="container mt-5">
-        <div class="re-dash-title">
-          <h1>All Tickets</h1>
-        </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Status</th>
-              <th scope="col">Help Topic</th>
-              <th scope="col">Description</th>
-              <th scope="col">Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Open</td>
-              <td>Help topic 1</td>
-              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, adipisci!</td>
-              <td>11/11/2020</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Closed</td>
-              <td>Help topic 2</td>
-              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, adipisci!</td>
-              <td>01/10/2020</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Closed</td>
-              <td>Help topic 1</td>
-              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, adipisci!</td>
-              <td>08/07/2020</td>
-            </tr>
-          </tbody>
-        </table>
-          
-      </div>
-      
-      
-		</div>
-      
-		</div>
-
-		
-
-
-		<!-- Footer -->
-		<footer class="container py-5">
-			<div class="row">
-				<div class="col-12 col-md">
-					<small class="d-block mb-3 text-muted"
-						>Reactive Tickets &copy; 2020</small
-					>
-				</div>
-				<div class="col-6 col-md">
-					<h5>Features</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Easy Helpdesk</a></li>
-						<li><a class="text-muted" href="#">Random feature</a></li>
-						<li><a class="text-muted" href="#">Team feature</a></li>
-						<li><a class="text-muted" href="#">Stuff for developers</a></li>
-					</ul>
-				</div>
-
-				<div class="col-6 col-md">
-					<h5>Resources</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Documentation</a></li>
-						<li>
-							<a class="text-muted" href="https://github.com/sbsmnt">Github</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-6 col-md">
-					<h5>About</h5>
-					<ul class="list-unstyled text-small">
-						<li>
-							<a class="text-muted" href="https://tiagoeira.com/">Team</a>
-						</li>
-						<li>
-							<a class="text-muted" href="https://tiagoeira.com/">Careers</a>
-						</li>
-						<li><a class="text-muted" href="#">Privacy</a></li>
-						<li><a class="text-muted" href="#">Terms</a></li>
-					</ul>
-				</div>
+		<div class="d-flex flex-row justify-content-left">
+			<div class="side-menu-sm">
+				<ul class="tr-dash-list">
+					<li class="tr-dash-option">
+						<p class="side-menu-btn">MT</p>
+						<p class="side-menu-btn new-ticket">+</p>
+						
+					</li>
+				</ul>
 			</div>
-		</footer>
 
+			<div class="side-menu">
+				<ul class="tr-dash-list">
+					<li class="tr-dash-option">
+						<a href="#">My Tickets</a>
+						<ul class="tr-dash-sublist">
+							<li class="tr-dash-option">
+								<a href="#">Open</a>
+							</li>
+							<li class="tr-dash-option">
+								<a href="#">Close</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="rt-desk-container d-flex flex-column">
+				<!-- Example -->
+				<div class="rt-desk flex-grow-1">
+					<div class="container-flex mt-5">
+						<div class="re-dash-title">
+							<h1>All Tickets</h1>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">ID</th>
+									<th scope="col">Status</th>
+									<th scope="col">Help Topic</th>
+									<th scope="col">Description</th>
+									<th scope="col">Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Open</td>
+									<td>Help topic 1</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>11/11/2020</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Closed</td>
+									<td>Help topic 2</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>01/10/2020</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Closed</td>
+									<td>Help topic 1</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>08/07/2020</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="container-flex mt-5">
+						<div class="re-dash-title">
+							<h1>All Tickets</h1>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">ID</th>
+									<th scope="col">Status</th>
+									<th scope="col">Help Topic</th>
+									<th scope="col">Description</th>
+									<th scope="col">Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Open</td>
+									<td>Help topic 1</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>11/11/2020</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Closed</td>
+									<td>Help topic 2</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>01/10/2020</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Closed</td>
+									<td>Help topic 1</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>08/07/2020</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="container-flex mt-5">
+						<div class="re-dash-title">
+							<h1>All Tickets</h1>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">ID</th>
+									<th scope="col">Status</th>
+									<th scope="col">Help Topic</th>
+									<th scope="col">Description</th>
+									<th scope="col">Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Open</td>
+									<td>Help topic 1</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>11/11/2020</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Closed</td>
+									<td>Help topic 2</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>01/10/2020</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Closed</td>
+									<td>Help topic 1</td>
+									<td>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veniam, adipisci!
+									</td>
+									<td>08/07/2020</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+				</div>
+
+				<!-- Footer -->
+				<footer class="container py-5">
+					<div class="row">
+						<div class="col-12 col-md">
+							<small class="d-block mb-3 text-muted"
+								>Reactive Tickets &copy; 2020</small
+							>
+						</div>
+						<div class="col-6 col-md">
+							<h5>Features</h5>
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#">Easy Helpdesk</a></li>
+								<li><a class="text-muted" href="#">Random feature</a></li>
+								<li><a class="text-muted" href="#">Team feature</a></li>
+								<li><a class="text-muted" href="#">Stuff for developers</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-md">
+							<h5>Resources</h5>
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#">Documentation</a></li>
+								<li>
+									<a class="text-muted" href="https://github.com/sbsmnt"
+										>Github</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-md">
+							<h5>About</h5>
+							<ul class="list-unstyled text-small">
+								<li>
+									<a class="text-muted" href="https://tiagoeira.com/">Team</a>
+								</li>
+								<li>
+									<a class="text-muted" href="https://tiagoeira.com/"
+										>Careers</a
+									>
+								</li>
+								<li><a class="text-muted" href="#">Privacy</a></li>
+								<li><a class="text-muted" href="#">Terms</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script src="./assets/js/tickets.js"></script>
 	</body>
 </html>

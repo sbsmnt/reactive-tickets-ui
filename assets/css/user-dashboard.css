@@ -14,18 +14,52 @@
   font-size: .85rem;
   font-weight: 600;
   margin: 0;
-  line-height: 1.5;
-  
+  line-height: 1.5;  
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "side-menu rt-desk rt-desk rt-desk"
+    "side-menu rt-desk rt-desk rt-desk"
+    "side-menu rt-desk rt-desk rt-desk";
+}
+
+
+
+.side-menu-sm{
+  grid-area: side-menu-sm;
+  display: none;
+  width: 70px;
+  padding: 1rem;
+  text-align: center;
 }
 
 .side-menu{
-  width: 20vh;
+  grid-area: side-menu;
+  position: fixed;
+  width: 12vw;
+  min-width: 200px;
   height: 100vh;
+  left: 0;
   padding: 2rem 1rem 0 2rem;
+  background: #f9f9f9;
   box-shadow: 1px -10px 20px -5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: all .5s ease;
 }
 
-.side-menu ul {
+.side-menu.expanded{
+  left: 0px;
+}
+
+.side-menu ul,
+.side-menu-sm ul {
+  width: 100%;
   list-style: none;
   padding: 0;
 }
@@ -34,15 +68,18 @@
   padding: 7px 0;
 }
 
-.tr-dash-option a{
+.tr-dash-option a,
+.tr-dash-option p.side-menu-btn{
   color: #212529;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
-.tr-dash-option a:hover{
+.tr-dash-option a:hover,
+.tr-dash-option p.side-menu-btn:hover{
   color: #18af75;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .tr-dash-sublist {
@@ -50,7 +87,42 @@
   margin-left: 1rem;
 }
 
+.rt-desk-container{
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 200px;
+  transition: all .5s ease;
+  z-index: 1;
+}
 .rt-desk {
+  grid-area: rt-desk;
+  padding: 2rem;
   background: #f8f8f8;
 }
 
+
+@media (max-width: 768px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "side-menu-sm rt-desk rt-desk rt-desk"
+      "side-menu-sm rt-desk rt-desk rt-desk"
+      "side-menu-sm rt-desk rt-desk rt-desk";
+  }
+
+  .side-menu-sm{
+    display: flex;
+  }
+  
+  .side-menu{
+    left: -200px;
+    height: 100%;
+  }
+
+  .rt-desk-container{
+    margin-left: 0;
+  }
+}
