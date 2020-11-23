@@ -7,7 +7,7 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 		<meta name="description" content="" />
-		<title>New Ticket - Reactive Tickets</title>
+		<title>Profile - Reactive Tickets</title>
 
 		<link rel="canonical" href="" />
 
@@ -20,7 +20,7 @@
 
 		<!-- Custom styles for this template -->
 		<link href="/assets/css/home.css" rel="stylesheet" />
-		<link href="/assets/css/animation.css" rel="stylesheet" />
+		<link href="/assets/css/profile.css" rel="stylesheet" />
 		<link href="/assets/css/user-dashboard.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -37,7 +37,7 @@
 					>
 				</div>
 				<div>
-					<a class="py-2 d-md-inline-block" href="#">
+					<a class="py-2 d-md-inline-block" href="user-profile.html">
 						<div class="logged-user">
 							<p>TE</p>
 						</div>
@@ -71,7 +71,6 @@
 				<ul class="tr-dash-list">
 					<li class="tr-dash-option">
 						<p class="side-menu-btn">MT</p>
-						<!-- <p class="side-menu-btn rt-create">+</p> -->
 					</li>
 				</ul>
 				<div class="rt-new-ticket">
@@ -107,7 +106,26 @@
 				<div class="rt-desk flex-grow-1">
 					<div class="container-flex mt-5">
 						<div class="re-dash-title">
-							<h1>Create New Ticket</h1>
+							<h1>Profile</h1>
+						</div>
+
+						<div class="mt-4 rt-profile-card">
+							<div class="rt-profile-img">
+								<img
+									src="./assets/img/profile/user-profile.png"
+									alt="User Name"
+								/>
+							</div>
+							<div class="rt-profile-info">
+								<h2>User Name</h2>
+								<p class="text-secondary">user.name@mail.com</p>
+								<h5>Signed Up in: {RegisterDate}.</h5>
+								<h5>{nrTickets} Tickets opened so far.</h5>
+
+								<div class="mt-5">
+									<a class="rt-link" href="#">Edit profile</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

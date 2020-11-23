@@ -103,7 +103,7 @@ button.rt-create:focus{
 
 .tr-dash-option a:hover,
 .tr-dash-option p.side-menu-btn:hover{
-  color: #18af75;
+  color: rgba(158, 230, 121, 0.9);
   text-decoration: none;
   cursor: pointer;
 }
