@@ -52,13 +52,25 @@
 	color: #251f27;
 	transition: ease-in-out color 0.15s;
 }
-.site-header a:hover {
+.site-header a:hover,
+.site-header span:hover{
 	color: #fff;
+	text-decoration: none;
+}
+
+.rt-link{
+	color: #251f27;
+	font-weight: 500;
+	transition: ease-in-out color 0.15s;
+}
+.rt-link:hover {
+	color: rgba(158, 230, 121, 0.9);
 	text-decoration: none;
 }
 
 .app-menu{
 	margin-right: 1.5rem;
+	cursor: pointer;
 }
 .app-menu i{
   font-size: 1.5rem;
@@ -81,6 +93,41 @@
 	z-index: 2;
 
 }
+
+.rt-main-menu{
+	display: none;
+	position: fixed;
+	width: 200px;
+	padding: 1rem 1.5rem;
+	left: 1.5rem;
+	background: #f5f5f5;
+	box-shadow: 0 2px 15px -2px rgba(0,0,0,0.2);
+	z-index: 99999;
+}
+.rt-main-menu.open{
+	display: block!important;
+}
+
+.rt-main-menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rt-main-menu ul li{
+	margin: 10px 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.rt-main-menu ul li a{
+	color: #212529;
+	font-weight: 600;
+	text-decoration: none;
+}
+.rt-main-menu ul li a:hover{
+	color: rgba(158, 230, 121, 0.9);
+}
+
 
 .rt-button{
 	font-weight: 600;
