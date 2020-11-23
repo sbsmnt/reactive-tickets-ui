@@ -35,7 +35,7 @@
   grid-area: side-menu-sm;
   display: none;
   width: 70px;
-  padding: 1rem;
+  padding: 1rem 0.5rem 7rem 0.5rem;
   text-align: center;
 }
 
@@ -46,11 +46,14 @@
   min-width: 200px;
   height: 100vh;
   left: 0;
-  padding: 2rem 1rem 0 2rem;
+  padding: 2rem 1rem 7rem 2rem;
   background: #f9f9f9;
   box-shadow: 1px -10px 20px -5px rgba(0, 0, 0, 0.2);
   z-index: 2;
   transition: all .5s ease;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .side-menu.expanded{
@@ -62,6 +65,29 @@
   width: 100%;
   list-style: none;
   padding: 0;
+}
+
+.rt-new-ticket {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem 0 0;
+}
+
+button.rt-create {
+  border: none;
+  padding: 1rem;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background: rgba(136, 247, 81,0.5);
+}
+button.rt-create:hover{
+  background: rgba(136, 247, 81,0.6);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+button.rt-create:focus{
+  outline: none;
 }
 
 .tr-dash-option{
@@ -100,6 +126,13 @@
   background: #f8f8f8;
 }
 
+.rt-ticket-entry{
+  cursor: pointer;
+}
+.rt-ticket-entry:hover{
+  background: rgba(136, 247, 81, 0.3);
+}
+
 
 @media (max-width: 768px){
   .grid-container {
@@ -115,6 +148,16 @@
 
   .side-menu-sm{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .side-menu-sm .rt-new-ticket{
+    padding: 0;
+  }
+  .side-menu-sm button.rt-create{
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
   }
   
   .side-menu{
@@ -124,5 +167,15 @@
 
   .rt-desk-container{
     margin-left: 0;
+  }
+
+  .rt-desk {
+    grid-area: rt-desk;
+    padding: .5rem;
+    background: #f8f8f8;
+  }
+
+  .col-description{
+    display: none;
   }
 }

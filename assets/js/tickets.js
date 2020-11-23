@@ -22,7 +22,9 @@ const sideMenu = document.querySelector('.side-menu');
 const sideMenuMobile = document.querySelector('.side-menu-sm');
 const sideMenuButton = document.querySelector('.side-menu-btn');
 const deskContainer = document.querySelector('.rt-desk-container');
-const newTicketButton = document.querySelector('.new-ticket');
+const newTicketButton = document.querySelectorAll('.rt-create');
+
+console.log(newTicketButton);
 
 sideMenuButton &&
 	sideMenuButton.addEventListener('click', () => {
@@ -43,8 +45,12 @@ deskContainer &&
 	});
 
 newTicketButton &&
-	newTicketButton.addEventListener('click', () => {
-		window.location.href = window.location.origin + '/new-ticket.html';
+	newTicketButton.forEach((createTicket) => {
+		createTicket.addEventListener('click', () => {
+			console.log('create');
+			window.location.href = window.location.origin + '/new-ticket.html';
+		});
 	});
 
+  
 // profile menu
