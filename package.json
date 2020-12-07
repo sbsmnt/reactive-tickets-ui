@@ -3,12 +3,8 @@
 	"version": "1.0.0",
 	"description": "UI design development for Reactive Tickets",
 	"main": "index.html",
-	"scripts": {
-		"start": "browser-sync start --server --files '*.html, /assets/*.*'"
-	},
+	"scripts": {},
 	"author": "Tiago Eira",
 	"license": "ISC",
-	"devDependencies": {
-		"browser-sync": "^2.26.13"
-	}
+	"devDependencies": {}
 }
